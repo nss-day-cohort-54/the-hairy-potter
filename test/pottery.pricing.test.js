@@ -4,8 +4,9 @@ import { usePottery, toSellOrNotToSell } from "../src/scripts/PotteryCatalog.js"
 
 
 describe("Sell uncracked pottery", () => {
-    const piece = makePottery("Snowflake", 10, 8)
+    let piece = makePottery("Snowflake", 10, 8)
     piece = toSellOrNotToSell(firePottery(piece, 2000))
+    const catalog = usePottery()
 
     test("Piece is priced when not cracked", () => {
         expect("price" in piece).toBe(true)
