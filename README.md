@@ -34,9 +34,6 @@ In this exercise, your task to build a workflow for making, and firing pottery, 
 
 In the `main.js` module, invoke the `makePottery` function and provide the required values as arguments. Store the object that gets returned into a variable, and then use `console.log()` to view the object.
 
-
-Also look at your terminal window that is running the tests and make sure that the `Pottery object is created with correct properties` test is passing.
-
 Once you have it working, make 5 pieces of pottery in `main.js`.
 
 **THEN PUSH YOUR CODE TO GITHUB**
@@ -60,12 +57,6 @@ In the `main.js` module, invoke the `firePottery` function for each of the 5 pie
 
 To check your work, make sure that at least one of your pieces of pottery is fired at a temperature that is too high.
 
-Also look at your terminal window that is running the tests and make sure that the following tests pass.
-
-* `Pottery marked as fired after going in the kiln`
-* `Pottery object is cracked when temperature is above 2200`
-* `Pottery object is uncracked when temperature is below 2200`
-
 **THEN PUSH YOUR CODE TO GITHUB**
 
 ## Pricing Uncracked Pottery
@@ -82,14 +73,6 @@ Also look at your terminal window that is running the tests and make sure that t
 #### Checking Your Work
 
 In the `main.js` module, invoke the `toSellOrNotToSell` function for each of the 5 pieces of pottery you created. Ensure you provide the required value as an argument.
-
-Also look at your terminal window that is running the tests and make sure that the following tests pass.
-
-* `Piece is not priced when cracked`
-* `Not in array of items to sell when cracked`
-* `Piece is priced when not cracked`
-* `In array of items to sell when uncracked`
-* `Piece has correct price`
 
 **THEN PUSH YOUR CODE TO GITHUB**
 
