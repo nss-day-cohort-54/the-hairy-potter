@@ -1,11 +1,8 @@
 import { makePottery } from "../src/scripts/PotteryWheel.js"
 import { firePottery } from "../src/scripts/Kiln.js"
-import { usePottery, toSellOrNotToSell } from "../src/scripts/PotteryCatalog.js"
-
-
 
 describe("Firing the pottery in the kiln that is too hot", () => {
-    const piece = makePottery("Mug", 10, 8)
+    let piece = makePottery("Mug", 10, 8)
     piece = firePottery(piece, 2300)
 
     test("Pottery object is cracked when temperature is above 2200", () => {
@@ -19,7 +16,7 @@ describe("Firing the pottery in the kiln that is too hot", () => {
 
 
 describe("Firing the pottery in the kiln with the correct temperate", () => {
-    const piece = makePottery("Mug", 10, 8)
+    let piece = makePottery("Mug", 10, 8)
     piece = firePottery(piece, 1300)
 
     test("Pottery object is uncracked when temperature is below 2200", () => {
